@@ -29,10 +29,13 @@ class TeamsViewController: UITableViewController {
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .default, reuseIdentifier: "cell")
 		let team = self.division.teams[indexPath.row]
-		
-		cell.textLabel?.text = team.name
-		
-		
+
+        let url = URL(string: team.logo)
+        let data = try? Data(contentsOf: url!)
+        cell.imageView?.image = UIImage(data: data!)
+        
+		//cell.textLabel?.text = team.name
+
 		cell.accessoryType = .disclosureIndicator
 		return cell
 	}
