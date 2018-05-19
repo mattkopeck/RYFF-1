@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="60" id="2" customClass="ScheduleTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="quz-eH-fLp">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6j-hW-KIs">
+                        <rect key="frame" x="4" y="2" width="312" height="51"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Game Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                        <rect key="frame" x="7" y="6" width="186" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="154" id="45"/>
+                            <constraint firstAttribute="height" constant="21" id="101"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.94706075170000004" green="0.31522077320000003" blue="0.814913094" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Game Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                        <rect key="frame" x="164" y="6" width="142" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="142" id="46"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Home Team" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                        <rect key="frame" x="12" y="29" width="135" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="103"/>
+                            <constraint firstAttribute="width" constant="135" id="145"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="vs." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                        <rect key="frame" x="146" y="29" width="28" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="135"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Away Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15">
+                        <rect key="frame" x="174" y="29" width="122" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="122" id="161"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="9" firstAttribute="top" secondItem="12" secondAttribute="top" id="1k8-26-rvX"/>
+                <constraint firstItem="12" firstAttribute="top" secondItem="15" secondAttribute="top" id="3HC-zo-ert"/>
+                <constraint firstItem="12" firstAttribute="bottom" secondItem="15" secondAttribute="bottom" id="5Xe-QA-yv3"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="2" secondAttribute="top" constant="6" id="7DM-lI-Yhj"/>
+                <constraint firstItem="9" firstAttribute="top" secondItem="2" secondAttribute="top" constant="29" id="Ggn-U2-ydX"/>
+                <constraint firstItem="6" firstAttribute="top" secondItem="3" secondAttribute="top" id="JKb-b1-T1g"/>
+                <constraint firstItem="6" firstAttribute="baseline" secondItem="3" secondAttribute="baseline" id="Sxj-p7-MT5"/>
+                <constraint firstItem="3" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="7" id="TlY-st-XM0"/>
+                <constraint firstItem="6" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="140" id="UsD-pJ-e9m"/>
+                <constraint firstItem="15" firstAttribute="baseline" secondItem="9" secondAttribute="baseline" id="Xjh-sa-Q9s"/>
+                <constraint firstItem="9" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="12" id="cQR-Vd-Isl"/>
+                <constraint firstAttribute="trailing" secondItem="15" secondAttribute="trailing" constant="24" id="etz-Fd-1Q7"/>
+                <constraint firstItem="12" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="odn-Xx-MHK"/>
+            </constraints>
+            <connections>
+                <outlet property="away_team" destination="15" id="97"/>
+                <outlet property="game_status" destination="6" id="185"/>
+                <outlet property="game_time" destination="3" id="99"/>
+                <outlet property="home_team" destination="9" id="100"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
