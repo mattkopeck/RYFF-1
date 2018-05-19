@@ -32,6 +32,13 @@
 		B5C1FF4020AEDB9900371108 /* CrossPlatformKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B5C1FF2B20AEDB7D00371108 /* CrossPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5C1FF4120AEDB9900371108 /* Gulliver.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B5C1FF2C20AEDB7D00371108 /* Gulliver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5C1FF4220AEDB9900371108 /* zlib.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B5C1FF2D20AEDB7D00371108 /* zlib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5E4AD1E20B02ABF00710197 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4AD1D20B02ABF00710197 /* DataStore.swift */; };
+		B5E4AD2120B02AD500710197 /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4AD2020B02AD500710197 /* Division.swift */; };
+		B5E4AD2320B02ADD00710197 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4AD2220B02ADD00710197 /* Team.swift */; };
+		B5E4AD2520B02AF200710197 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4AD2420B02AF200710197 /* Server.swift */; };
+		B5E4AD2820B030FB00710197 /* ScheduledGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4AD2720B030FB00710197 /* ScheduledGame.swift */; };
+		B5E4AD2A20B0348700710197 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4AD2920B0348700710197 /* Errors.swift */; };
+		B5E4AD2C20B0356B00710197 /* Standing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4AD2B20B0356B00710197 /* Standing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +82,13 @@
 		B5C1FF2B20AEDB7D00371108 /* CrossPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrossPlatformKit.framework; sourceTree = "<group>"; };
 		B5C1FF2C20AEDB7D00371108 /* Gulliver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gulliver.framework; sourceTree = "<group>"; };
 		B5C1FF2D20AEDB7D00371108 /* zlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = zlib.framework; sourceTree = "<group>"; };
+		B5E4AD1D20B02ABF00710197 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		B5E4AD2020B02AD500710197 /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
+		B5E4AD2220B02ADD00710197 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		B5E4AD2420B02AF200710197 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		B5E4AD2720B030FB00710197 /* ScheduledGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledGame.swift; sourceTree = "<group>"; };
+		B5E4AD2920B0348700710197 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		B5E4AD2B20B0356B00710197 /* Standing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +135,8 @@
 				B5C1FF1220AEDAD000371108 /* Classes */,
 				B5C1FF1420AEDAD000371108 /* Resources */,
 				B5C1FF1B20AEDAD000371108 /* Controllers */,
+				B5E4AD1F20B02AC400710197 /* Model */,
+				B5E4AD2620B02AF600710197 /* Comms */,
 			);
 			path = RYFF;
 			sourceTree = "<group>";
@@ -167,6 +183,27 @@
 				B5C1FF2D20AEDB7D00371108 /* zlib.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5E4AD1F20B02AC400710197 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4AD1D20B02ABF00710197 /* DataStore.swift */,
+				B5E4AD2020B02AD500710197 /* Division.swift */,
+				B5E4AD2220B02ADD00710197 /* Team.swift */,
+				B5E4AD2B20B0356B00710197 /* Standing.swift */,
+				B5E4AD2720B030FB00710197 /* ScheduledGame.swift */,
+				B5E4AD2920B0348700710197 /* Errors.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5E4AD2620B02AF600710197 /* Comms */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4AD2420B02AF200710197 /* Server.swift */,
+			);
+			path = Comms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E4AD2820B030FB00710197 /* ScheduledGame.swift in Sources */,
 				B5C1FF2220AEDAD000371108 /* ViewController.swift in Sources */,
+				B5E4AD1E20B02ABF00710197 /* DataStore.swift in Sources */,
+				B5E4AD2120B02AD500710197 /* Division.swift in Sources */,
+				B5E4AD2A20B0348700710197 /* Errors.swift in Sources */,
+				B5E4AD2520B02AF200710197 /* Server.swift in Sources */,
+				B5E4AD2C20B0356B00710197 /* Standing.swift in Sources */,
+				B5E4AD2320B02ADD00710197 /* Team.swift in Sources */,
 				B5C1FF1D20AEDAD000371108 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
