@@ -1,0 +1,11 @@
+framework module Hoard {
+  umbrella header "Hoard.h"
+
+  export *
+  module * { export * }
+}
+
+module Hoard.Swift {
+    header "Hoard-Swift.h"
+    requires objc
+}
