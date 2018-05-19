@@ -9,6 +9,14 @@
 import UIKit
 
 class DivisionsViewController: UITableViewController {
+	enum Kind { case teams, standings }
+	
+	var kind: Kind = .teams
+	convenience init(kind: Kind) {
+		self.init(style: .plain)
+		self.kind = kind
+	}
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -33,8 +41,15 @@ class DivisionsViewController: UITableViewController {
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let div = DataStore.instance.cache.divisions[indexPath.row]
 
-		let controller = TeamsViewController(division: div)
-		self.navigationController?.pushViewController(controller, animated: true)
+		switch self.kind {
+		case .teams:
+			let controller = TeamsViewController(division: div)
+			self.navigationController?.pushViewController(controller, animated: true)
+			
+		case .standings:
+			let controller = StandingsViewController(division: div)
+			self.navigationController?.pushViewController(controller, animated: true)
+		}
 	}
 
 }

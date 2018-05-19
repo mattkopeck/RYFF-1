@@ -53,7 +53,10 @@ class MainMenuViewController: UITableViewController {
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		switch self.menuOptions[indexPath.row] {
 		case .teams:
-			self.navigationController?.pushViewController(DivisionsViewController(style: .plain), animated: true)
+			self.navigationController?.pushViewController(DivisionsViewController(kind: .teams), animated: true)
+			
+		case .standings:
+			self.navigationController?.pushViewController(DivisionsViewController(kind: .standings), animated: true)
 			
 		default: break
 		}
